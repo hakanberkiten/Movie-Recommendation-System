@@ -19,7 +19,6 @@ function App() {
   const [errorMsg, setErrorMsg] = useState('');
   const [darkMode, setDarkMode] = useState(false);
 
-  // Tema oluşturma
   const theme = createTheme({
     palette: {
       mode: darkMode ? 'dark' : 'light',
@@ -32,7 +31,6 @@ function App() {
     },
   });
 
-  // Uygulama başlarken tüm filmleri API'den çek
   useEffect(() => {
     const fetchMovies = async () => {
       try {
@@ -79,7 +77,6 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      {/* Tema Değiştirici (En sağ üstte) */}
       <Box
         sx={{
           position: 'fixed',
@@ -105,7 +102,6 @@ function App() {
           Movie Recommendation System
         </Typography>
 
-        {/* Autocomplete bileşeni */}
         <Autocomplete
           freeSolo
           options={moviesList}
