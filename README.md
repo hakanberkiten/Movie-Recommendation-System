@@ -63,6 +63,8 @@ A content-based movie recommendation system built using Flask (backend) and Reac
 3. View the top 10 recommended movies based on the selected title.
 4. Click on any recommended movie to search for it on Google.
 
+![Recommendations Page](Screenshot.png)
+
 ## Dataset
 - The project uses the **TMDB 5000 Movies Dataset**, which includes metadata such as genres, cast, crew, and overview.
 - Preprocessing is done to extract relevant features for better recommendations.
